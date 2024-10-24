@@ -47,7 +47,7 @@ public class InputHandler {
     private Set<String> selectClassTypes() {
         Set<String> classTypes = new HashSet<>();
         System.out.println("Select the classes to generate (enter the numbers separated by commas):");
-        System.out.println("1. Entity\n2. Repository\n3. PersistenceService\n4. CoreService\n5. Interface Class\n6. Core Impl Class\n7. Controller");
+        System.out.println("1. Entity\n2. Repository\n3. PersistenceService\n4. CoreService\n5. Interface Class\n6. Impl Class\n7. Controller");
 
         String input = scanner.nextLine();
         String[] selections = input.split(",");
@@ -67,10 +67,10 @@ public class InputHandler {
                     classTypes.add("CoreService");
                     break;
                 case "5":
-                    classTypes.add("Interface");
+                    classTypes.add("ClassInterface");
                     break;
                 case "6":
-                    classTypes.add("CoreImpl");
+                    classTypes.add("ClassImpl");
                     break;
                 case "7":
                     classTypes.add("Controller");
@@ -89,13 +89,13 @@ public class InputHandler {
             case "Repository":
                 return new RepositoryGenerationCommand(className);
             case "PersistenceService":
-                return new PersistenceServiceGenerationCommand(className);
+                return new PersistenceServiceGenerationCommand(className, attributes);
             case "CoreService":
-                return new CoreServiceGenerationCommand(className);
-            case "Interface":
-                return new CoreServiceInterfaceGenerationCommand(className);
-            case "CoreImpl":
-                return new CoreServiceImplGenerationCommand(className);
+                return new CoreServiceGenerationCommand(className, attributes);
+            case "ClassInterface":
+                return new ClassInterfaceGenerationCommand(className, attributes);
+            case "ClassImpl":
+                return new ClassImplGenerationCommand(className, attributes);
             case "Controller":
                 return new ControllerGenerationCommand(className);
             default:
