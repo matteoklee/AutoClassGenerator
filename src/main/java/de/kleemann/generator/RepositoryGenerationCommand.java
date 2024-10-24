@@ -24,7 +24,7 @@ public class RepositoryGenerationCommand implements Command {
 
         StringBuilder classBuilder = new StringBuilder();
 
-        classBuilder.append("public interface ").append(className).append("Repository extends JpaRepository<")
+        classBuilder.append("@Repository\npublic interface ").append(className).append("Repository extends JpaRepository<")
                 .append(className).append("Entity, Long>").append(" {\n}\n");
 
         FileUtil.writeToFile("generated/" + className + "Repository.txt", classBuilder.toString());

@@ -35,7 +35,7 @@
         <artifactId>exec-maven-plugin</artifactId>
         <version>3.0.0</version>
         <configuration>
-          <mainClass>com.example.App</mainClass>
+          <mainClass>de.kleemann.AutoClassGenerator</mainClass>
         </configuration>
       </plugin>
       <plugin>
@@ -44,6 +44,19 @@
         <configuration>
           <source>22</source>
           <target>22</target>
+        </configuration>
+      </plugin>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-jar-plugin</artifactId>
+        <configuration>
+          <archive>
+            <manifest>
+              <mainClass>
+                de.kleemann.AutoClassGenerator
+              </mainClass>
+            </manifest>
+          </archive>
         </configuration>
       </plugin>
     </plugins>

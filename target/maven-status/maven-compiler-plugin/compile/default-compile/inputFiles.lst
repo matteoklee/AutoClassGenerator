@@ -1,4 +1,12 @@
+C:\Users\Admin\IdeaProjects\AutoClassGenerator\src\main\java\de\kleemann\AutoClassGenerator.java
 C:\Users\Admin\IdeaProjects\AutoClassGenerator\src\main\java\de\kleemann\generator\ClassGenerationCommand.java
+C:\Users\Admin\IdeaProjects\AutoClassGenerator\src\main\java\de\kleemann\generator\PersistenceServiceGenerationCommand.java
+C:\Users\Admin\IdeaProjects\AutoClassGenerator\src\main\java\de\kleemann\generator\ControllerGenerationCommand.java
 C:\Users\Admin\IdeaProjects\AutoClassGenerator\src\main\java\de\kleemann\generator\Command.java
+C:\Users\Admin\IdeaProjects\AutoClassGenerator\src\main\java\de\kleemann\util\FileUtil.java
+C:\Users\Admin\IdeaProjects\AutoClassGenerator\src\main\java\de\kleemann\generator\EntityGenerationCommand.java
 C:\Users\Admin\IdeaProjects\AutoClassGenerator\src\main\java\de\kleemann\input\InputHandler.java
-C:\Users\Admin\IdeaProjects\AutoClassGenerator\src\main\java\de\kleemann\App.java
+C:\Users\Admin\IdeaProjects\AutoClassGenerator\src\main\java\de\kleemann\generator\CoreServiceGenerationCommand.java
+C:\Users\Admin\IdeaProjects\AutoClassGenerator\src\main\java\de\kleemann\generator\CoreServiceImplGenerationCommand.java
+C:\Users\Admin\IdeaProjects\AutoClassGenerator\src\main\java\de\kleemann\generator\CoreServiceInterfaceGenerationCommand.java
+C:\Users\Admin\IdeaProjects\AutoClassGenerator\src\main\java\de\kleemann\generator\RepositoryGenerationCommand.java

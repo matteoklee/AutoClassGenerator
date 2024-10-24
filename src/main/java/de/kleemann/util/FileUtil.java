@@ -1,5 +1,6 @@
 package de.kleemann.util;
 
+import java.io.File;
 import java.io.FileWriter;
 import java.io.IOException;
 
@@ -13,7 +14,13 @@ import java.io.IOException;
 public class FileUtil {
 
     public static void writeToFile(String fileName, String content) {
-        try (FileWriter writer = new FileWriter(fileName)) {
+        File file = new File(fileName);
+        File parentDir = file.getParentFile();
+        if (parentDir != null && !parentDir.exists()) {
+            parentDir.mkdirs();
+        }
+
+        try (FileWriter writer = new FileWriter(file)) {
             writer.write(content);
             System.out.println("File " + fileName + " was generated successfully.");
         } catch (IOException e) {

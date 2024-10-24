@@ -34,7 +34,7 @@ public class EntityGenerationCommand implements Command {
                 String attributeName = parts[0].trim();
                 String attributeType = parts[1].trim();
                 if(attributeName.toLowerCase().contains("id")) {
-                    classBuilder.append("    @Id\n       @GeneratedValue(strategy = GenerationType.IDENTITY)\n     private ")
+                    classBuilder.append("    @Id\n    @GeneratedValue(strategy = GenerationType.IDENTITY)\n    private ")
                             .append(attributeType).append(" ").append(attributeName).append(";\n");
                 } else {
                     classBuilder.append("    private ").append(attributeType).append(" ").append(attributeName).append(";\n");
