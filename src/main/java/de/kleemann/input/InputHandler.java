@@ -97,7 +97,7 @@ public class InputHandler {
             case "ClassImpl":
                 return new ClassImplGenerationCommand(className, attributes);
             case "Controller":
-                return new ControllerGenerationCommand(className);
+                return new ControllerGenerationCommand(className, attributes);
             default:
                 return null;
         }
